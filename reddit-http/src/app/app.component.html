@@ -14,6 +14,11 @@
     </button>
   </form>
 </div>
+<button (click)="makeCompactPost()" class="btn btn-primary"> Submit link
+</button>
+<div *ngIf="loading">loading...</div>
+<pre>{{data | json}}</pre>
+
 <div class="container">
   <!-- start adding here -->
   <app-article *ngFor="let art of sortedArticles()" [article]="art"></app-article>
