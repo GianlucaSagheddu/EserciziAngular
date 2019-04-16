@@ -17,7 +17,7 @@ export class ArticleComponent implements OnInit {
   }
 
 
-//CIAO
+//CIAO23
 
   voteUp(): Boolean {
     this.article.voteUp(); //Modificato qui
