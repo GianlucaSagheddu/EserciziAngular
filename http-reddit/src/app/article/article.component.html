@@ -2,8 +2,11 @@
       <h3> {{ article.votes }} Points </h3>
   </div>
   <div class="card-body">
-    <a href="{{ article.link }}"> {{ article.title }}</a>
-    <span class="badge badge-pill badge-info">{{article.domain()}}</span>
+    <h3> {{ article.title }} </h3>
+    <p> {{ article.body }}</p>
+    <br>
+    <p>Created by user {{ article.userId }}</p>
+
   </div>
   <div class="card-footer">
      <div class="btn-group">
