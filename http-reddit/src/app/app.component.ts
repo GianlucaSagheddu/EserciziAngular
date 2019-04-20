@@ -68,7 +68,7 @@ export class AppComponent {
     let id = 0;
     this.makeCompactPost(Number(userId.value), title.value, body.value);
     //id = this.data.id;
-    
+
     this.articles.push(new Article( Number(userId.value), Number(id), title.value, body.value));
     title.value = '';
     userId.value = '';
