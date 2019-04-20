@@ -5,7 +5,7 @@
         <label for="userid">userid:</label>
         <input name="userid" #userid class="form-control">
       </div>
-      
+
       <div class="form-group">
         <label for="title">Title:</label>
         <input name="title" #title class="form-control">
@@ -14,7 +14,7 @@
         <label for="body">body:</label>
         <input name="body" #body class="form-control">
       </div>
-    <button (click)="addArticle(userid, id, title, body)" class="btn btn-primary">
+    <button (click)="addArticle(userid, title, body)" class="btn btn-primary">
       Submit link
     </button>
   </form>

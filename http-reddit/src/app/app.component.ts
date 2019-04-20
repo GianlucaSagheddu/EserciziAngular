@@ -54,7 +54,7 @@ export class AppComponent {
        })
      )
      .subscribe(data => {
-       console.log(data);
+       //console.log(this.data);
        this.data = data;
 
        this.loading = false;
@@ -64,9 +64,11 @@ export class AppComponent {
 
 
   addArticle(userId: HTMLInputElement, title: HTMLInputElement, body: HTMLInputElement): boolean {
-    //console.log(`Adding article title: ${title.value} and link: ${link.value}`);
-    let id = this.makeCompactPost(Number(userId.value), title.value, body.value);
-    console.log(this.data);
+
+    let id = 0;
+    this.makeCompactPost(Number(userId.value), title.value, body.value);
+    //id = this.data.id;
+    
     this.articles.push(new Article( Number(userId.value), Number(id), title.value, body.value));
     title.value = '';
     userId.value = '';

@@ -52,6 +52,7 @@ export class FooComponent {
      )
      .subscribe(data => {
        this.data = data;
+       console.log(this.data.id);
        this.loading = false;
      });
  }
